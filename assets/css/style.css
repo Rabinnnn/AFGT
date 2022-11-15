@@ -102,7 +102,7 @@ p{
 #header .logo {
   overflow: hidden;
   padding: 16px 30px 12px 30px;
-  background: #009970;
+  background: #dea11b;
 }
 
 #header .logo h1 {
@@ -200,7 +200,7 @@ p{
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #009970;
+  background: #dea11b;
   padding: 10px 25px;
   margin-left: 30px;
   margin-right: 15px;
@@ -211,8 +211,8 @@ p{
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-/* background: #00b383; */
-background: #f0c002;
+ background: #00b383;
+/*background: #dba630;*/
 }
 
 .navbar .dropdown ul {
@@ -573,7 +573,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: #009970;
+  background: #dea11b;
   padding: 40px 0 20px 0;
   color: #fff;
 }
@@ -1448,7 +1448,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #009970;
+  background: #dea11b;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
