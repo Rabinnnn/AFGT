@@ -32,6 +32,11 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+p{
+
+  font-weight: 250;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -206,7 +211,8 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #00b383;
+/* background: #00b383; */
+background: #f0c002;
 }
 
 .navbar .dropdown ul {
