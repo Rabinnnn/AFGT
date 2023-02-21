@@ -101,8 +101,10 @@ $(document).ready(function()
 			{
 				items:1,
 				loop:true,
-				smartSpeed:800,
+				smartSpeed:1000,
 				autoplay:true,
+				autoplayTimeout:12000,
+
 				nav:false,
 				dots:false
 			});
