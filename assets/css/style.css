@@ -83,6 +83,7 @@ p{
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -92,7 +93,8 @@ p{
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  top: 20px;
+  top: 98px;
+
 }
 
 #header .header-container {
@@ -139,11 +141,14 @@ p{
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     top: 0;
     background: #009970;
+
+
   }
 
   #header.header-scrolled,
   #header .header-container {
     background: #009970;
+
   }
 
   #header .logo {
@@ -1633,4 +1638,42 @@ section {
 {
 
   padding-top: 100px;
+}
+
+.sub-header .logo {
+  overflow: hidden;
+  padding: 10px 20px 10px 20px;
+  background: #fff;
+
+
+}
+
+.sub-header .logo h1 {
+  display: block;
+
+  padding: 0;
+  line-height: 1;
+  ;
+  font-family: "Poppins", sans-serif;
+
+
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  letter-spacing: 5px;
+
+}
+
+.sub-header .logo h1 a,
+.sub-header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 100px;
+  max-width: 150px;
 }
