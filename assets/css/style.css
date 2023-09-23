@@ -9,7 +9,9 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+	font-weight: 400;
   color: #444444;
 }
 
@@ -34,7 +36,11 @@ h6 {
 
 p{
 
-  font-weight: 250;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+	font-weight: 400;
+  color: #4f4f4f;
+
 }
 
 /*--------------------------------------------------------------
@@ -77,6 +83,7 @@ p{
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -86,8 +93,9 @@ p{
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  top: 20px;
+  top: 98px;
 }
+
 
 #header .header-container {
   background: #fff;
@@ -101,11 +109,13 @@ p{
 
 #header .logo {
   overflow: hidden;
-  padding: 16px 30px 12px 30px;
-  background: #009970;
+  padding: 10px 20px 10px 20px;
+  background: #fff;
+
 }
 
 #header .logo h1 {
+  display: inline-block;
   font-size: 26px;
   padding: 0;
   line-height: 1;
@@ -122,7 +132,8 @@ p{
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 60px;
+  max-width: 60px;
 }
 
 @media (max-width: 992px) {
@@ -130,11 +141,14 @@ p{
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     top: 0;
     background: #009970;
+
+
   }
 
   #header.header-scrolled,
   #header .header-container {
     background: #009970;
+
   }
 
   #header .logo {
@@ -144,6 +158,25 @@ p{
   #header .logo h1 {
     font-size: 24px;
   }
+  #clients {
+    background: #f6f6f7;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  #clients a {
+    width: 40%;
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 5px 0px;
+  }
+  #clients  a:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+
+
 }
 
 /*--------------------------------------------------------------
@@ -176,10 +209,13 @@ p{
   padding: 10px 0 10px 30px;
   color: #36343a;
   transition: 0.3s;
-  font-size: 13px;
-  font-weight: 500;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -200,7 +236,7 @@ p{
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #009970;
+  background: #dea11b;
   padding: 10px 25px;
   margin-left: 30px;
   margin-right: 15px;
@@ -211,8 +247,8 @@ p{
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-/* background: #00b383; */
-background: #f0c002;
+ background: #00b383;
+/*background: #dba630;*/
 }
 
 .navbar .dropdown ul {
@@ -385,9 +421,9 @@ background: #f0c002;
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# heroo Section
 --------------------------------------------------------------*/
-#hero {
+#heroo {
   width: 100%;
   height: 80vh;
   background: url("../img/afgt.jpg");
@@ -395,11 +431,11 @@ background: #f0c002;
   position: relative;
 }
 
-#hero .container {
+#heroo .container {
   padding-top: 80px;
 }
 
-#hero:before {
+#heroo:before {
   content: "";
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -409,7 +445,7 @@ background: #f0c002;
   right: 0;
 }
 
-#hero h1 {
+#heroo h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -417,7 +453,7 @@ background: #f0c002;
   color: #fff;
 }
 
-#hero h2 {
+#heroo h2 {
   color: #eee;
   margin-bottom: 40px;
   font-size: 15px;
@@ -427,7 +463,7 @@ background: #f0c002;
   text-transform: uppercase;
 }
 
-#hero .btn-get-started {
+#heroo .btn-get-started {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -442,27 +478,27 @@ background: #f0c002;
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+#heroo .btn-get-started:hover {
   background: #009970;
   border: 2px solid #009970;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #heroo {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero {
+  #heroo {
     height: 100vh;
   }
 
-  #hero .container {
+  #heroo .container {
     padding-top: 60px;
   }
 
-  #hero h1 {
+  #heroo h1 {
     font-size: 32px;
     line-height: 36px;
   }
@@ -517,7 +553,7 @@ section {
   padding: 5px 0;
 }
 
-.clients img {
+.clients  img {
   width: 40%;
   filter: grayscale(100);
   transition: all 0.4s ease-in-out;
@@ -525,7 +561,8 @@ section {
   padding: 15px 0;
 }
 
-.clients img:hover {
+
+.clients  img:hover {
   filter: none;
   transform: scale(1.1);
 }
@@ -573,7 +610,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: #009970;
+  background: #dea11b;
   padding: 40px 0 20px 0;
   color: #fff;
 }
@@ -1317,11 +1354,13 @@ section {
   color: #444444;
   font-size: 14px;
   background: #f1f0f2;
+
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9f8f9;
+  background: #242323;
+
 }
 
 #footer .footer-top .footer-contact {
@@ -1364,7 +1403,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #00c28e;
+  color: orange;
   font-size: 18px;
   line-height: 1;
 }
@@ -1380,7 +1419,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1440,7 +1479,6 @@ section {
 }
 
 #footer .credits {
-  padding-top: 5px;
   font-size: 13px;
   color: #444444;
 }
@@ -1448,15 +1486,15 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #009970;
+  background: #dea11b;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   transition: 0.3s;
 }
 
@@ -1465,3 +1503,184 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
+/*********************************
+5.1 Hero Slider
+*********************************/
+.hero_slider_nav
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(calc(-50% + 30px));
+	width: 58px;
+	height: 58px;
+	background: #FFFFFF;
+	z-index: 9;
+	cursor: pointer;
+}
+.hero_slider_nav:hover
+{
+	background: #ffb606;
+}
+.hero_slider_nav:hover span
+{
+	color: #FFFFFF;
+}
+.hero_slider_nav span
+{
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	color: #121212;
+	line-height: 1;
+}
+.hero_slider_left
+{
+	left: 4.32%;
+}
+.hero_slider_right
+{
+	right: 4.32%;
+}
+.hero_slider_container
+{
+	width: 100%;
+	height: 100%;
+}
+.hero_slide
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+.hero_slide_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.hero_slide_container
+{
+	width: 100%;
+	height: 110vh;
+}
+.hero_slide_container:before {
+	content: "";
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+  }
+
+.hero_slide_content
+{
+	max-width: 80%;
+	-webkit-transform: translateY(30px);
+	-moz-transform: translateY(30px);
+	-ms-transform: translateY(30px);
+	-o-transform: translateY(30px);
+	transform: translateY(30px);
+}
+.hero_slide_content h1
+{
+	font-size: 42px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.hero_slide_content h1 span
+{
+
+	color: #ffb606;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.animated
+{
+	-webkit-animation-duration : 1s !important;
+	animation-duration : 1s !important;
+	-webkit-animation-delay : 500ms;
+	animation-delay : 500ms;
+}
+.animate-out
+{
+	-webkit-animation-delay : 0ms;
+	animation-delay : 0ms;
+}
+/*********************************
+5. Home
+*********************************/
+
+.home
+{
+
+  padding-top: 100px;
+}
+
+.sub-header .logo {
+  overflow: hidden;
+  padding: 10px 20px 10px 20px;
+  background: #fff;
+
+
+}
+
+.sub-header .logo h1 {
+  display: block;
+
+  padding: 0;
+  line-height: 1;
+  ;
+  font-family: "Poppins", sans-serif;
+
+
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  letter-spacing: 5px;
+
+}
+
+.sub-header .logo h1 a,
+.sub-header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 100px;
+  max-width: 150px;
+}
+
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}
+#more6 {display: none;}
