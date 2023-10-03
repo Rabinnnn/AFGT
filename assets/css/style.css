@@ -94,6 +94,8 @@ p{
   z-index: 997;
   transition: all 0.5s;
   position: relative;
+  padding: 0;
+
 
 
 }
@@ -111,9 +113,15 @@ p{
 }
 
 #header .logo {
-  overflow: hidden;
-  padding: 10px 20px 10px 20px;
+
+
   background: #fff;
+
+
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 
 }
 
@@ -156,6 +164,8 @@ p{
 
   #header .logo {
     padding-left: 0;
+    margin-left: 0;
+
   }
 
   #header .logo h1 {
@@ -195,7 +205,9 @@ p{
 .navbar ul {
   margin: 0;
   padding: 0;
-  display: flex;
+display: flex;
+
+
   list-style: none;
   align-items: center;
 }
@@ -1645,7 +1657,7 @@ section {
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+  
 }
 
 .navbar .dropdown ul a {
